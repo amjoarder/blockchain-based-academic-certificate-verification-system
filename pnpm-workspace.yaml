@@ -1,0 +1,7 @@
+packages:
+  - blockchain
+  - frontend
+onlyBuiltDependencies:
+  - esbuild
+allowBuilds:
+  esbuild: true

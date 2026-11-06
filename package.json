@@ -1,0 +1,30 @@
+{
+  "name": "academic-certificate-verification",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "setup": "pnpm install && pnpm --filter blockchain compile",
+    "compile": "pnpm --filter blockchain compile",
+    "test": "pnpm -r test",
+    "test:contract": "pnpm --filter blockchain test",
+    "build": "pnpm --filter frontend build",
+    "benchmark": "pnpm --filter blockchain benchmark",
+    "chain": "pnpm --filter blockchain node",
+    "deploy:local": "pnpm --filter blockchain run deploy",
+    "seed": "pnpm --filter blockchain seed",
+    "smoke": "pnpm --filter blockchain smoke",
+    "frontend": "pnpm --filter frontend dev",
+    "demo:app": "wait-on tcp:127.0.0.1:8545 && pnpm deploy:local && pnpm seed && pnpm frontend",
+    "demo": "concurrently --kill-others --success first --names chain,app --prefix-colors blue,green \"pnpm chain\" \"pnpm demo:app\"",
+    "reset": "pnpm deploy:local && pnpm seed"
+  },
+  "devDependencies": {
+    "concurrently": "9.2.1",
+    "wait-on": "8.0.4"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

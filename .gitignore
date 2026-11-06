@@ -1,0 +1,41 @@
+node_modules/
+
+# Generated blockchain output
+blockchain/artifacts/
+blockchain/cache/
+blockchain/coverage/
+blockchain/types/
+
+# Generated frontend output
+frontend/dist/
+frontend/coverage/
+playwright-report/
+test-results/
+
+# Generated benchmark evidence (the UI needs only the current summary)
+results/raw/
+results/csv/
+results/charts/
+
+# Local configuration and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Local coursework and temporary artifacts
+output/
+tmp/
+docs/Certificates/
+*.mp4
+*.zip
+*.docx
+*.pdf
+Starting.txt
+tmp_assignment_text.txt
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

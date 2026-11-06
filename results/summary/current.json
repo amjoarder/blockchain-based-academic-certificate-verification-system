@@ -1,0 +1,119 @@
+{
+  "completed": true,
+  "generatedAt": "2026-09-28T07:50:16.162Z",
+  "environment": {
+    "network": "Hardhat in-process EVM",
+    "chainId": 31337,
+    "node": "v24.19.0",
+    "volumes": [
+      10,
+      25,
+      50,
+      100
+    ]
+  },
+  "deployment": {
+    "gasUsed": "1785399",
+    "gasPriceWei": "1107421875",
+    "feeWei": "1977189908203125",
+    "feeEth": "0.001977189908203125",
+    "blockNumber": 1,
+    "transactionHash": "0x12d98e6fd132fc8804c3ec93c55fcf496242ede88d9a38371714345e6d08fbf3"
+  },
+  "operations": [
+    {
+      "operation": "registerUniversity",
+      "hash": "0xfa9e4dbe56f94c4fb62f37d98f610ebd069df731585e589bfdb3ebf868eee11f",
+      "blockNumber": 2,
+      "gasUsed": "114697",
+      "gasPriceWei": "977232432",
+      "feeWei": "112085628253104",
+      "latencyMs": 4.06,
+      "success": true
+    },
+    {
+      "operation": "registerStudent",
+      "hash": "0x10d8cde3cbb8f45d8b51d4c9fd8562c86e34441e9472e423a9f7537c83d68f20",
+      "blockNumber": 3,
+      "gasUsed": "207374",
+      "gasPriceWei": "855545402",
+      "feeWei": "177417872194348",
+      "latencyMs": 2.06,
+      "success": true
+    },
+    {
+      "operation": "issueCertificate",
+      "hash": "0x7691708eb97e10f028618ba6d4237001660368f0e8b001378ba9cc598d9ecf34",
+      "blockNumber": 4,
+      "gasUsed": "303123",
+      "gasPriceWei": "749341469",
+      "feeWei": "227142634107687",
+      "latencyMs": 3.3,
+      "success": true
+    },
+    {
+      "operation": "revokeCertificate",
+      "hash": "0x4e2d0f529c4066716e4055305a41f05d052fbcb95ca719032c5adca551c09195",
+      "blockNumber": 5,
+      "gasUsed": "81973",
+      "gasPriceWei": "656620213",
+      "feeWei": "53825128720249",
+      "latencyMs": 1.64,
+      "success": true
+    }
+  ],
+  "verification": {
+    "samples": 100,
+    "averageMs": 0.528,
+    "minMs": 0.332,
+    "maxMs": 1.97,
+    "gasUsed": 0,
+    "note": "Read-only eth_call; no transaction fee."
+  },
+  "scalability": [
+    {
+      "volume": 10,
+      "successful": 10,
+      "failed": 0,
+      "averageIssuanceLatencyMs": 2.96,
+      "averageBlockConfirmationMs": 2.96,
+      "tps": 334.85,
+      "successRate": 100,
+      "totalGas": "2723766",
+      "averageGas": 272376
+    },
+    {
+      "volume": 25,
+      "successful": 25,
+      "failed": 0,
+      "averageIssuanceLatencyMs": 2.27,
+      "averageBlockConfirmationMs": 2.27,
+      "tps": 437.67,
+      "successRate": 100,
+      "totalGas": "6758247",
+      "averageGas": 270329
+    },
+    {
+      "volume": 50,
+      "successful": 50,
+      "failed": 0,
+      "averageIssuanceLatencyMs": 2.27,
+      "averageBlockConfirmationMs": 2.27,
+      "tps": 438.36,
+      "successRate": 100,
+      "totalGas": "13482414",
+      "averageGas": 269648
+    },
+    {
+      "volume": 100,
+      "successful": 100,
+      "failed": 0,
+      "averageIssuanceLatencyMs": 1.8,
+      "averageBlockConfirmationMs": 1.8,
+      "tps": 554.83,
+      "successRate": 100,
+      "totalGas": "26932008",
+      "averageGas": 269320
+    }
+  ]
+}
